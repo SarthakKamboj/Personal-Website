@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+:root {
+    --spanFontSize : 10rem;
+}
+
+/* All Elements */
+* {
+    overflow-x: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Body/HTML */
+body,html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Quicksand', monospace, sans-serif;
+    background: white;
+    color: rgb(22, 22, 22);
+}
+
+/* Intro */
+
+.intro {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+    font-size: 3rem;
+    /* -webkit-box-shadow: 19px 24px 91px -38px rgba(0,0,0,0.7);
+    -moz-box-shadow: 19px 24px 91px -38px rgba(0,0,0,0.7);
+    box-shadow: 19px 24px 91px -38px rgba(0,0,0,0.7); */
+}
+
+.introTitle {
+    font-family: 'VT323', monospace;
+    /* font-weight: bold; */
+    position: absolute;
+    color: rgb(22, 22, 22);
+    /* top: 1rem; */
+    top: 15rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    letter-spacing: 3px;
+    z-index: 2;
+    text-align: center;
+    width: 100vw;
+    /* height: 100vh; */
+    height: 44vh;
+
+}
+
+.introTitle img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.introBck {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    /* width: 100%; */
+    background: url("{{ url_for('static',filename='Images-Videos/me.png') }}");
+    background-repeat: no-repeat;
+}
+
+.intro span {
+    transition: all 0.5s ease-in;
+    font-size: var(--spanFontSize);
+    font-size: 7rem;
+    cursor: pointer;
+}
+
+
+span.explode {
+    filter: blur(var(--spanFontSize)) grayscale(20%);
+}
+
+@media screen and (max-width: 500px) {
+    .intro {
+        font-size: 2rem;
+        /* width: 400px; */
+        width: 100vw;
+    }
+
+    .intro span {
+        font-size: 4rem;
+    }
+}
+
+/* Section Titles */
+
+.done-so-far-title, .inspiration-title {
+    /* width: 38rem; */
+    width: 80vw;
+    height: auto;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 2rem 0;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem 0;
+    padding-bottom: 0.5rem;
+}
+
+.done-so-far-title::after, .inspiration-title::after {
+    background: rgb(22, 22, 22);
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1.6px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 1px;
+}
+
+/* What I've Done So Far */
+
+.done-so-far {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.done {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    margin: 0 8%;
+}
+
+.done-image {
+    width: 350px;
+    height: auto;
+    margin: 2.5vw;
+}
+
+.done-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.done-desc {
+    width: 350px;
+    margin: 2.5vw auto;
+}
+
+.done-role br {
+    margin: 10px 0;
+    background: blue;
+    content: " ";
+    display: block;
+}
+
+.done-desc div {
+    padding: 5px 0;
+}
+
+.done-place-title {
+    color: rgb(70, 70, 209);
+    font-size: 115%;
+    letter-spacing: 1px;
+}
+
+.done-title {
+    color: rgb(9, 148, 9);
+}
+
+.done-location, .done-role {
+    color: rgb(41, 41, 41);
+    line-height: 130%;
+    font-size: 90%;
+}
+
+
+@media screen and (max-width: 786px) {
+    .done-desc {
+        text-align: left;
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .done-desc {
+        width: 95vw;
+    }
+}
+
+/* Inspiration */
+
+.inspiration-title, .inspiration {
+    background: rgb(238, 238, 238);
+    width: 100vw;
+}
+
+.inspiration-reason {
+    color: rgb(70, 70, 209);
+    font-size: 1rem;
+    background: rgb(238, 238, 238);
+    width: 80vw;
+    text-align: left;
+    padding: 20px 10vw;
+    line-height: 1.5rem;
+}
+
+.inspiration { 
+    /*
+    display: grid;
+    grid-auto-flow: dense; */
+    display: flex;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    /* align-content: flex-start; */
+    overflow: hidden;
+    cursor: pointer;
+    padding: 20px 0;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.inspiration img {
+    filter: grayscale(100%);
+    /* transition: 1s all; */
+    /* width: 300px; */
+    /* height: 300px; */
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.inspiration img:hover {
+    filter:grayscale(0%);
+}
+
+@media screen and (max-width: 2000px) {
+    .inspiration {
+        /* grid-template-columns: repeat(5,1fr); */
+    }
+    .inspiration img {
+        width: 20vw;
+        height: 20vw;
+    }
+    
+}
+
+@media screen and (max-width: 1500px) {
+    .inspiration {
+        /* grid-template-columns: repeat(4,1fr); */
+    }
+    .inspiration img {
+        filter:grayscale(0%);
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .inspiration {
+        /* grid-template-columns: repeat(2,1fr); */
+    }
+    .inspiration img {
+        filter:grayscale(0%);
+        width: 50vw;
+        height: 50vw;
+        transition: 1s all;
+    }
+}
+
+/* Promises */
+.promises {
+    background: linear-gradient(to bottom, #0559CC, grey);
+    font-size: 6vw;
+    color: white;
+    cursor: pointer;
+    width: 100vw;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.promises-title {
+    font-weight: 800;
+}
+
+.promises-title::after {
+    background: white;
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    width: 100px;
+    height: 2px;
+}
+
+.promises div {
+    padding: 10px 0;
+    position: relative;
+}
+
+.promises div:nth-child(2) {
+    margin-top: 10px;
+}
+
+.promise {
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 10%;
+    /* transition: 1s all; */
+}
+
+.promise:hover {
+    color: rgb(53, 196, 243);
+}
+
+@media screen and (min-width: 1000px) {
+    .promises {
+        font-size: 2.3rem;
+    }
+
+    .promise {
+        font-size: 1.5rem;
+    }
+}
+
+/* Quote/ Social Media */
+.quote, .social-media {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 80vw;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 10vw;
+    padding-bottom: 10px;
+}
+
+.quote::after {
+    position: absolute;
+    content: "";
+    background: black;
+    width: 100px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.mj {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    transition: border-radius 1s;
+}
+
+.mj:hover {
+    border-radius: 50%;
+}
+
+.social-media {
+    font-size: 3rem;
+}
+
+.fa-instagram {
+    color: rgb(245, 142, 160);
+}
+
+.fa-linkedin {
+    color: #4875B4;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.quote {
+    /* padding: 20px 10vw; */
+    /* color: white; */
+    /* background: linear-gradient(to bottom, grey,#CE1141, #CE1141); */
+    background: grey;
+}
+
+.social-media {
+    background: rgb(238, 238, 238);
+}
+

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">    -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='CSS/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome-free-5.9.0-web/fontawesome-free-5.9.0-web/css/all.css') }}">
+</head>
+<body>
+
+    <!-- Sections
+    1. Intro --done
+    2. What I've Done So Far --done
+    3. My Inspiration --done
+    4. My Thoughts --done
+    5. Quote --done
+    -->
+
+    <!-- Intro -->
+
+    <div class="intro" style="
+        background: url({{ url_for('static', filename='Images-Videos/me.png') }});
+        background-position-x: 40%;
+        background-position-y: 50%;
+        ">
+        <div class="introTitle">
+            &mdash;<i>Hey There, I'm&mdash;<br></i>
+        </div>
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/me.png') }}" class="introBck"> -->
+    </div>
+
+    <!-- A Little Bit of What I've Done -->
+
+    <!-- Extracirriculars
+        1. iGeekTeam --done
+        2. TKD- website/instructor --done
+        3. 3rd degree Black belt
+        4. mathnasium --done
+        5. Team Excel -- done
+        6. Business 1st Place UCI -- done
+        7. S&D Stanford --
+    -->
+
+    <div class="done-so-far-title">
+        A Little Bit of What I've Done 
+    </div>
+    <div class="done-so-far">
+        <div class="done">
+            <div class="done-image">
+                <img src="{{ url_for('static',filename='Images-Videos/Done-So-Far/ffma.jpg') }}" alt="FFMA">
+            </div>
+            <div class="done-desc">
+                <a target="_blank" href="https://www.martialartsirvine.com/">
+                    <div class="done-place-title">
+                    Fitness Factory Martial Arts
+                    </div>
+                </a>
+                <strong>
+                    <div class="done-title">
+                        Front-End Web Developer/ Student Instructor, <i>2017-2019</i>
+                    </div>
+                    <div class="done-location">
+                        Irvine, CA
+                    </div>
+                </strong>
+                <div class="done-role">
+                    I worked on developing a reponsive website for customers to learn about FFMA. I effectively used HTML, CSS, and Javascript to add an old-school feel to the it, tying in with the traditional feel of martial arts. In June 2019, it was successfully deployed using Heroku and the Python's Flask microframework.<br>
+                    While developing this project, I learned to use CSS transitions and Javascript's DOM manipulation to create clean animations. Along the way, I encountered several obstacles as I implemented my knowledge into a real-world assignment. Overcoming these coding obstacles helped me become independent and find solutions effectively.<br>
+                    All in all, this experience taught me the value of reliability, efficiency, and hard work as I had to work independently and effectively to create a functional website by myself. 
+                </div>
+            </div>
+        </div>
+
+        <div class="done">
+            <div class="done-image">
+                <img src="{{ url_for('static',filename='Images-Videos/Done-So-Far/igeekteam.jpg') }}" alt="iGeekTeam">
+            </div>
+            <div class="done-desc">
+                <a href="https://igeekteam.com/">
+                    <div class="done-place-title">
+                        iGeekTeam
+                    </div>
+                </a>
+                <strong>
+                    <div class="done-title">
+                        Computer Science Intern, <i>2019-2020</i>
+                    </div>
+                    <div class="done-location">
+                        Tustin, CA
+                    </div>
+                </strong>
+                <div class="done-role">
+                    As being the first intern to join iGeekTeam, I gained valuable experience for me to see first-hand the professional side of computer science. I spent my days working with several other developers on unique projects, specifically app and website applications. Communicating, problem solving, and achieving goals as a team proved to be a very exciting experience. Due to the size of the company, my co-workers were often worked in several places around the world. This allowed me to get to know people of all ethnic backgrounds and belieds.<br>
+                    Overviewing my co-workers code helped me improve upon the efficiency my own code. iGeekTeam forced me to ponder how to approach a problem in several different ways, wherein lies the beauty of computer science. Often times, one single problem has many solutions, some preferable to others. Yet in this deliberation, I was able to enhance my ability to produce on-demand and high quality work.
+                </div>
+            </div>
+        </div>
+
+        <div class="done">
+            <div class="done-image">
+                <img src="{{ url_for('static',filename='Images-Videos/Done-So-Far/mathnasium.png') }}" alt="Mathnasium">
+            </div>
+            <div class="done-desc">
+                <a href="https://www.mathnasium.com/lagunaniguel">
+                    <div class="done-place-title">
+                        Mathnasium
+                    </div>
+                </a>
+                <strong>
+                    <div class="done-title">
+                        Private Tutor, <i>2019-2020</i>
+                    </div>
+                    <div class="done-location">
+                        Laguna Niguel, CA
+                    </div>
+                </strong>
+                <div class="done-role">
+                    Mathnasium helped me develop some of the great qualities essential to contributing to a business. I worked with several young students, teaching them the fundamentals of mathematics and english mechanics. I learned how communicate my ideas to others while having strong people's skills, two assets necessary to fostering a inspirational workforce. Throughout my day, I would have the oppurtunity to converse with several kids and talk about their stuggles and weaknesses. Helping them understand concepts step-by-step gave me a greater appreciation for the process of learning.<br>
+                    However, the most powerful lesson I learned during my time at Mathnasium was the importance of punctuality. My daily schedule included school homework, basketball practice, interning, yet I learned to manage my time efficiently. By prioritizing certain tasks over others, I always found time to perform my job well.
+                </div>
+            </div>
+        </div>
+
+        <div class="done">
+            <div class="done-image">
+                <img src="{{ url_for('static',filename='Images-Videos/Done-So-Far/UCI.jpg') }}" alt="UCI">
+            </div>
+            <div class="done-desc">
+                <a target="_blank" href="https://www.martialartsirvine.com/">
+                    <div class="done-place-title">
+                        UCI Youth CEO Competition
+                    </div>
+                </a>
+                <strong>
+                    <div class="done-title">
+                        1st Place <i>May 2019</i>
+                    </div>
+                    <div class="done-location">
+                        Irvine, CA
+                    </div>
+                </strong>
+                <div class="done-role">
+                    This competition proved to be an invaluable experience full entrepreneurial and great inspiration. My team and I were given the unique opportunity to present our software-based toy rental service idea, Toyz4Joy. Even with a panel of several highly-accomplished judges, we professionally presented our business idea, covering our mission statement, financial projections, and even sponsorships. <br>
+                    Our success was a culmination of several hours of research on product distribution, customer acquisition costs, and proper management tactics.<br>
+                    Through this process, I was grateful have the opportunity to closely work with talented and supportive friends. The late nights and hard work editing the business plan and rehearsing our presentation will always be a memory to cherish.
+                </div>
+            </div>
+        </div>
+    
+        <div class="done">
+            <div class="done-image">
+                <img src="{{ url_for('static',filename='Images-Videos/Done-So-Far/excel - Copy.gif') }}" alt="FFMA">
+            </div>
+            <div class="done-desc">
+                <a target="_blank" href="https://www.martialartsirvine.com/">
+                    <div class="done-place-title">
+                    Team Excel Member
+                    </div>
+                </a>
+                <strong>
+                    <div class="done-title">
+                        Nevada State Silver Medalist/ California State Bronze Medalist, <i>2015-2016</i>
+                    </div>
+                    <div class="done-location">
+                        Canoga Park, CA
+                    </div>
+                </strong>
+                <div class="done-role">
+                    One and half hours on Monday and Wednesday, three and half hours on Friday, and 3 hours of Saturday. As it turns out competiting on a high level did require a lot of hard work and committment. Although a hectic and exhausting schedule, this small little team would lead me to accomplish many big things.<br>
+                    This experience taught me patience, endurance, and strong will power. Day by day, hard work turned into skill, and eventually skill turned into reward when I was honored with a silver medal at the Nevada State Championship and a bronze medal at the California State Championship.<br>
+                    I can comfortably say I owe much of my determination to what I learned at Team Excel. 
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="done">
+            <div class="done-image">
+                <img src="{{ url_for('static',filename='Images-Videos/Done-So-Far/stanford.jpg') }}" alt="FFMA">
+            </div>
+            <div class="done-desc">
+                <a target="_blank" href="https://www.martialartsirvine.com/">
+                    <div class="done-place-title">
+                    Parliamentary Speech and Debate
+                    </div>
+                </a>
+                <strong>
+                    <div class="done-title">
+                        S&D <i>2016-2020</i>
+                    </div>
+                    <div class="done-location">
+                        Irvine, CA
+                    </div>
+                </strong>
+                <div class="done-role">
+                    
+                </div>
+            </div>
+        </div> -->
+    
+
+    </div>
+
+    <!-- Inspiration -->
+    <div class="inspiration-title">
+        My Inspiration
+    </div>
+    <div class="inspiration-reason">
+        Everywhere I look, inspirations oozes. The people and beauty around me help me appreciate more, give back, and push forth. My biggest motivation comes not from within, but from others and what they have done for me.
+    </div>
+    <div class="inspiration">
+        <img src="{{ url_for('static',filename='Images-Videos/Inspiration/image-2.png') }}" alt="">
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/bonfire.png') }}" alt=""> -->
+        <img src="{{ url_for('static',filename='Images-Videos/Inspiration/image-3.png') }}" alt="">
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/aurora.png') }}" alt=""> -->
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/image-5.png') }}" alt=""> -->
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/image-6.png') }}" alt=""> -->
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/gandhi.png') }}" alt=""> -->
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/image-1.jpg') }}" alt=""> -->
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/image-7.png') }}" alt=""> -->
+        <img src="{{ url_for('static',filename='Images-Videos/Inspiration/image-8.png') }}" alt="">
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/fun.png') }}" alt=""> -->
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/image-9.png') }}" alt=""> -->
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/sky.png') }}" alt=""> -->
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/image-10.png') }}" alt=""> -->
+        <!-- <img src="{{ url_for('static',filename='Images-Videos/Inspiration/honu.png') }}" alt=""> -->
+        <img src="{{ url_for('static',filename='Images-Videos/Inspiration/image-11.png') }}" alt="">
+    </div>
+
+    <div class="promises">
+        <div class="promises-title">
+            These Are My Promises
+        </div>
+        <div class="promise">
+            Work Smart not Hard
+        </div>
+        <div class="promise">
+            Never Forget Where You Came From
+        </div>
+        <div class="promise">
+            Enjoy The Ride
+        </div>
+        <div class="promise">
+            You Only Live Once
+        </div>
+        <div class="promise">
+            Never Stress Too Much
+        </div>
+        <div class="promise">
+            Don't Be Lazy Be Efficient
+        </div>
+        <div class="promise">
+            Chase A Passion Not A Paycheck
+        </div>
+        <div class="promise">
+            Be Fun and Free-Flowing
+        </div>
+    </div>
+
+    <div class="quote">
+            &ldquo;I've failed over and over and over again in my life and that is why I succeed.&rdquo;<br><br>
+             - Michael Jordan<br><br>
+             <img class="mj" src="{{ url_for('static',filename='Images-Videos/mj.jpeg') }}" alt="MJ">
+    </div>
+
+    <div class="social-media">
+        <a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a target="_blank" href="https://www.github.com"><i class="fab fa-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <script src="{{ url_for('static',filename='JS/introHover.js') }}"></script>
+</body>
+</html>
